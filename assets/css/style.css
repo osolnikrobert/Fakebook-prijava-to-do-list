@@ -1,0 +1,28 @@
+.telo {
+  align: center;
+  }
+.logo {
+  background-color: #3b5998;
+  padding: 20px 30px 30px 40px;
+}
+#naslov {
+  font-family: lucida sans;
+  color: white;
+  font-weight: stong;
+}
+h2 {
+  color: #3b5998;
+  font-weight: strong;
+}
+#slika {
+  margin: 20px;
+}
+p{
+  font-family: Arial;
+}
+#iskalnik {
+  color: white;
+}
+strong {
+  text-decoration: underline;
+}

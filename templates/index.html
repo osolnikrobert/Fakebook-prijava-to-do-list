@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block glavna_vsebina %}
+    <h1>Moja prva stran</h1>
+
+    {% if logiran %}
+        Bravo {{ user.email() }}, si prijavljen. <br/>
+        <a href="{{ logout_url }}">Odjava</a>
+    <div class="logo">
+      <h1 id="naslov">fakebook</h1>
+      <p id="iskalnik">Iskalnik: <input type="text" name="iskalnik" placeholder="išči prijatelja"></p></ br>
+    </div>
+    <h2>Robert Osolnik</h2>
+    <img src="http://shrani.si/f/3G/TS/1ecGfBOp/slika.jpg" height="250" width="250">
+    <br />
+
+    <button id="slika"><img src="http://shrani.si/f/6/Sf/3WzjkQ8h/icon.png" height="15" width="15"/> Dodaj prijatelja</button>
+    <p><strong>Kraj:</strong> Kamnik</p>
+    <p><strong>Starost:</strong> 23</p>
+    <p><strong>Izobrazba:</strong> Diplomirani inženir multimedijskih komunikacij</p>
+    {% else %}
+        Nisi prijavlen.
+        <a href="{{ login_url }}">Prijava</a>
+    <div class="logo">
+      <h1 id="naslov">fakebook</h1>
+      <p id="iskalnik">Iskalnik: <input type="text" name="iskalnik" placeholder="išči prijatelja"></p></ br>
+    </div>
+    <h2>Robert Osolnik</h2>
+    <img src="http://shrani.si/f/3G/TS/1ecGfBOp/slika.jpg" height="250" width="250">
+    <br />
+
+    <button id="slika"><img src="http://shrani.si/f/6/Sf/3WzjkQ8h/icon.png" height="15" width="15"/> Dodaj prijatelja</button>
+    <p><strong>Kraj:</strong> Kamnik</p>
+    <p><strong>Starost:</strong> 23</p>
+    <p><strong>Izobrazba:</strong> Diplomirani inženir multimedijskih komunikacij</p>
+    {% endif %}
+{% endblock %}
